@@ -8,12 +8,10 @@ end
 
 # code your input_to_index and move method here!
 
-def input_to_index
-  index = #{input}to.i - 1
+def input_to_index(input)
+  input.to_i - 1
 end
 
-def update_array_at_with(array, index, value)
-  array[index] = value
+def move (board, index, current_player = "X")
+  board[index] = current_player
 end
-
-update_array_at_with(board, input, "X")
